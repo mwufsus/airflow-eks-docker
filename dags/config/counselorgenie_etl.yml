@@ -1,0 +1,20 @@
+models:
+  - Application
+  - Alert
+  - Borrower
+  - Collection
+  - Debt
+  - Decision
+  - CreditReport
+  - DebtScore
+  - DisqualificationReason
+  - DmpEnrollment
+  - Expense
+  - Inquiry
+  - Offer
+  - PlaidAccount
+  - PlaidItem
+  - PlaidTransaction
+  - Referral
+  - RiskScore
+  - Spouse

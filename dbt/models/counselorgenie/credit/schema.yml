@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: single_credit_file
+    description: 'Table with the latest set of credit data'

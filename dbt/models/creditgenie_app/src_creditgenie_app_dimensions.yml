@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: data_staging
+    database: dev
+    tables:
+      - name : staging_customer
+      - name : staging_decisioning
+      - name : staging_disqualificationreason
+      - name : staging_plaidaccount
+      - name : staging_plaidaccountbalance
+      - name : staging_plaiditem
+      - name : staging_plaidtransaction
+
+ 

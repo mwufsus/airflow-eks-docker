@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: data_staging
+    description: &data_staging data lake of data loaded from S3.
+    schema: data_staging
+    loaded_at_field: inserted_at
+
+    freshness:
+      error_after: {count: 24, period: hour}
+
+    tables:
+      - name: creditgenie_app_plaidaccount
+        freshness: null
+      - name: creditgenie_app_customer
+        freshness: null
+      - name: creditgenie_app_plaidtransaction
+        freshness: null
+      - name: creditgenie_app_plaiditem
+        freshness: null
+      - name: creditgenie_app_plaidaccountbalance
+        freshness: null
+      - name: creditgenie_app_decision
+        freshness: null
+      - name: creditgenie_app_disqualificationreason
+        freshness: null

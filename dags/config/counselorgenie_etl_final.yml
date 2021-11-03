@@ -1,0 +1,21 @@
+transforms:
+  - final_applications
+  - final_borrowers
+  - final_collections
+  - final_creditreport
+  - final_credit_installment
+  - final_credit_revolving
+  - final_credit_lineofcredit
+  - final_credit_open
+  - final_credit_mortgage
+  - final_debts
+  - final_decisions
+  - final_disqualifications
+  - final_dmpenrollment
+  - final_expenses
+  - final_plaiditems
+  - final_plaidaccounts
+  - final_plaidtransactions
+  - final_referral
+  - final_spouse
+  - final_utm_sources

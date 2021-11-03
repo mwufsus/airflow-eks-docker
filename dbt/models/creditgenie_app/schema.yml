@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: application_decision
+    description: 'Application Decisions'
+    columns:
+      - name: application_status_change_id
+        description: 'Primary key'
+  - name: application_disqualifications
+  - name: customer_account_balances
+  - name: customer_account_items
+  - name: customer_accounts
+  - name: customer_transactions
+  - name: customers
+  

@@ -1,0 +1,9 @@
+# the names of these 'transforms' must match the name of the models in dbt/models/creditgenie_app/..
+transforms:
+  - customers
+  - application_decision
+  - application_disqualifications
+  - customer_accounts
+  - customer_account_items
+  - customer_account_balances
+  - customer_transactions

@@ -1,0 +1,8 @@
+models:
+  - Customer
+  - Decision
+  - DisqualificationReason
+  - PlaidAccount
+  - PlaidAccountBalance
+  - PlaidItem
+  - PlaidTransaction
