@@ -49,7 +49,7 @@ dag = DAG(
     "counselorgenie_daily_transforms",
     default_args=default_arg,
     schedule_interval="15 05 * * *",
-    template_searchpath="/usr/local/airflow/data-warehouse/jobs/counselorgenie_etl/",
+    template_searchpath="/opt/airflow/data-warehouse/jobs/counselorgenie_etl/",
     concurrency=1,
     max_active_runs=1,
 )

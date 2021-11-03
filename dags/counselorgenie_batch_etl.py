@@ -55,7 +55,7 @@ dag = DAG(
     "counselorgenie_batch_etl",
     default_args=default_arg,
     schedule_interval="45 04 * * *",
-    template_searchpath="/usr/local/airflow/data-warehouse/jobs/counselorgenie_etl/",
+    template_searchpath="/opt/airflow/data-warehouse/jobs/counselorgenie_etl/",
     concurrency=2,
     max_active_runs=1,
 )

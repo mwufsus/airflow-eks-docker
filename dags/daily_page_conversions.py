@@ -13,7 +13,7 @@ dag = DAG(
     "daily_conversions_report",
     default_args=default_arg,
     schedule_interval="59 * * * *",
-    template_searchpath="/usr/local/airflow/data-warehouse/dims/daily_page_conversion_report/",
+    template_searchpath="/opt/airflow/data-warehouse/dims/daily_page_conversion_report/",
 )
 
 temp_apps_task = PostgresOperator(

@@ -53,7 +53,7 @@ dag = DAG(
     "creditgenie_app_batch_etl",
     default_args=default_arg,
     schedule_interval="45 06 * * *",
-    template_searchpath="/usr/local/airflow/data-warehouse/jobs/creditgenie_app_etl/",
+    template_searchpath="/opt/airflow/data-warehouse/jobs/creditgenie_app_etl/",
 )
 
 """

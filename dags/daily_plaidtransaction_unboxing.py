@@ -17,7 +17,7 @@ dag = DAG(
     "daily_plaidtransaction_unboxing",
     default_args=default_arg,
     schedule_interval="15 6 * * *",
-    template_searchpath="/usr/local/airflow/data-warehouse/jobs/daily_staging_cleanup/",
+    template_searchpath="/opt/airflow/data-warehouse/jobs/daily_staging_cleanup/",
 )
 
 staging_plaidtransaction_unbox_task = PostgresOperator(

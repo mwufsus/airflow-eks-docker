@@ -32,7 +32,7 @@ dag = DAG(
     schedule_interval="5 1 1 * *",
     default_args=default_args,
     catchup=False,
-    template_searchpath = ['/usr/local/airflow/']
+    template_searchpath = ['/opt/airflow/']
 )
 
 nfcc_billing_task = PgDownloadOperator(
@@ -43,7 +43,7 @@ nfcc_billing_task = PgDownloadOperator(
     pandas_sql_params={
         "chunksize": 100,
     },
-    csv_path="/usr/local/airflow/{{ task.task_id }}_{{ ds }}.csv",
+    csv_path="/opt/airflow/{{ task.task_id }}_{{ ds }}.csv",
     csv_params={
         "sep": ",",
         "index": False,
@@ -62,7 +62,7 @@ email_task = EmailOperator(
             ,'matt.wufsus@creditgenie.com'],
         subject='Airflow Alert',
         html_content=""" Billing Job for Previous Month """,
-        files=[f"/usr/local/airflow/{task_id_str}_" + f"{date_string}" + ".csv"],
+        files=[f"/opt/airflow/{task_id_str}_" + f"{date_string}" + ".csv"],
         dag=dag
 )
 

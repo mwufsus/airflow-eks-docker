@@ -12,7 +12,7 @@ date_string = datetime.now().date() - timedelta(1)
 config_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "config"))
 
 # These could be set with environment variables if you want to run the DAG outside the Astro container
-PROJECT_HOME = "/usr/local/airflow"
+PROJECT_HOME = "/opt/airflow"
 DBT_PROJECT_DIR = os.path.join(PROJECT_HOME, "dbt")
 DBT_MODEL_DIR = os.path.join(DBT_PROJECT_DIR, "models")
 DBT_CREDITGENIE_DIR = os.path.join(DBT_MODEL_DIR, "counselorgenie")
