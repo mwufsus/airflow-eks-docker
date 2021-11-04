@@ -92,4 +92,4 @@ with open(os.path.join(config_dir, "counselorgenie_etl_final.yml")) as etl_file:
             sql="ANALYZE;",
         )
 
-        etl_transform_task >> vacuum_task >> analyze_task
+        etl_transform_task

@@ -99,4 +99,3 @@ with open(os.path.join(config_dir, "creditgenie_app_etl.yml")) as etl_file:
         )
 
         etl_sensor_task >> etl_copy_task
-        etl_copy_task >> analyze_task

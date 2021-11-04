@@ -93,4 +93,4 @@ analyze_task = PostgresOperator(
     sql="ANALYZE;",
 )
 
-etl_transform_task >> analyze_task
+etl_transform_task
