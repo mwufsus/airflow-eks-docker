@@ -3,6 +3,8 @@ FROM apache/airflow:2.1.2-python3.7
 LABEL version="1.0.0"
 
 RUN pip install --user pytest
+RUN pip install --user airflow-dbt
+RUN pip install --user dbt
 
 COPY dags/ ${AIRFLOW_HOME}/dags
 COPY config/ ${AIRFLOW_HOME}/config
