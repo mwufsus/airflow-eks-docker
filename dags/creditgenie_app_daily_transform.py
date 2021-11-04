@@ -82,4 +82,4 @@ with open(os.path.join(config_dir, "creditgenie_app_transforms.yml")) as etl_fil
             dag=dag,
         )
 
-        etl_transform_task >> analyze_task
+        etl_transform_task
