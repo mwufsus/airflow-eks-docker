@@ -74,7 +74,7 @@ with open(os.path.join(config_dir, "creditgenie_app_etl.yml")) as etl_file:
             task_id=model + "_sensor",
             bucket_key=f"{product}/{environment}/{model}/{date_string}/*",
             bucket_name="datagenie-data",
-            aws_conn_id="s3_connection",
+            aws_conn_id="s3_connection_airflow",
             soft_fail=True,
             poke_interval=60*60*24,
             timeout=60*30,
