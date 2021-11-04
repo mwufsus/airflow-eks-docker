@@ -82,12 +82,4 @@ with open(os.path.join(config_dir, "creditgenie_app_transforms.yml")) as etl_fil
             dag=dag,
         )
 
-        analyze_task = PostgresOperator(
-            dag=dag,
-            postgres_conn_id="redshift_default",
-            task_id="analyze_task",
-            trigger_rule="all_success",
-            sql="ANALYZE;",
-        )
-
         etl_transform_task >> analyze_task

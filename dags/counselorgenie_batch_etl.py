@@ -99,20 +99,4 @@ with open(os.path.join(config_dir, "counselorgenie_etl.yml")) as etl_file:
             params={"date_string": date_string},
         )
 
-        vacuum_task = PostgresOperator(
-            dag=dag,
-            postgres_conn_id="redshift_default",
-            task_id="vacuum_task",
-            trigger_rule="all_done",
-            sql="COMMIT;VACUUM FULL;COMMIT;",
-        )
-
-        analyze_task = PostgresOperator(
-            dag=dag,
-            postgres_conn_id="redshift_default",
-            task_id="analyze_task",
-            trigger_rule="all_done",
-            sql="ANALYZE;",
-        )
-
         etl_sensor_task >> etl_copy_task
