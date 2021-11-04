@@ -48,7 +48,7 @@ def task_fail_slack_alert(context):
 
 default_arg = {
     "owner": "Matt W",
-    "start_date": datetime(2021, 6, 30),
+    "start_date": datetime(2021, 11, 2),
     "catchup": False,
     "on_failure_callback": task_fail_slack_alert,
 }

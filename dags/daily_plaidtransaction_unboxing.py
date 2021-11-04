@@ -8,7 +8,7 @@ date_string = datetime.now().date() - timedelta(1)
 
 default_arg = {
     "owner": "Matt W",
-    "start_date": datetime(2020, 11, 17),
+    "start_date": datetime(2021, 11, 2),
     "backfill": False,
     "catchup": False,
 }
